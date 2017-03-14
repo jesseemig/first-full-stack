@@ -9,6 +9,7 @@
                <h1 class=playlistTitle xs-offset-3> <a href="" ng-click="displayList()" class="playlistHeader">My Playlist</a></h1>
                    <ol  class="playListWhole">
                    <li class="listItems" ng-repeat="song in beingAdded">
+                       <h5><span class="glyphicons glyphicons-remove"></span>Remove</h5>
                     <h4>Artist:   &nbsp;  &emsp; &emsp;{{song.artist.name }}  </h4>
                     <h4>Song: &emsp; &nbsp; &emsp;{{ song.name }} </h4>
                     <a href="{{song.url}}" class="listenLink"><h4 class="listenLink"><span class="glyphicon glyphicon-play"></span> &nbsp;Click to listen</h4></a>
