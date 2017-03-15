@@ -47,5 +47,10 @@ home.controller("HomeController", ["$scope", "$http",  function ($scope, $http) 
         })
     }
 
-
+    $scope.remove = function (index, id) {
+        return $http.delete("/playlist/" + id).then(function (response) {
+            $scope.beingAdded.splice(index, 1);
+        console.log(response.data);
+    })
+    }
 }]);

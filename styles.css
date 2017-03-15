@@ -268,3 +268,10 @@ li {
 .listenLink {
     margin-top: 3%;
 }
+
+
+.rmvBtn {
+    display: inline-block;
+    margin-left: 85%;
+    margin-top: -37%;
+}
