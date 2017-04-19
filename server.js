@@ -5,12 +5,12 @@ var port = process.env.PORT || 9300;
 var morgan = require("morgan");
 var mongoose = require("mongoose");
 var path = require('path');
-                     
+
 app.use(express.static(path.join(__dirname)));
 
 app.use(bodyParser.json());
 app.use(morgan("dev"));
-  
+
 app.use("/playlist", require("./routes/playlistRoutes"));
 
 
