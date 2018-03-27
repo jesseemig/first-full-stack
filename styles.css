@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 767px) {
     body {
         font-size: 0.9em;
@@ -23,23 +22,18 @@
     }
 }
 
-@font-face {
-    font-family: 'spyAgency';
-    src: url('');
-}
- 
- 
 .top {
     text-align: center;
-    background: url(headerPic.jpg) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(headerPic.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 150%;
 }
+
 .title {
-    font-family: 'spyAgency';
+    font-family: serif;
     text-align: center;
     font-size: 650%;
     margin-top: 3%;
@@ -62,7 +56,6 @@
     display: inline-flex;
     justify-content: space-around;
     margin: auto;
-    
 }
 
 .mainBody {
@@ -73,8 +66,8 @@
 .here {
     display: inline-block;
     float: left;
-    
 }
+
 .playlistList {
     text-align: left;
 }
@@ -82,6 +75,7 @@
 li {
     font-size: 150%;
 }
+
 .homeLink {
     flex-grow: 0;
     flex-shrink: 3;
@@ -103,11 +97,11 @@ li {
 }
 
 .lower {
-   background: url(crowd.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(crowd.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     min-height: 800px;
 }
 
@@ -119,15 +113,16 @@ li {
 }
 
 .playListWhole {
-     background-color: white;
+    background-color: white;
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
 }
+
 .listItems {
     position: relative;
     padding-top: 2%;
     color: black;
-    padding-bottom: 1%; 
+    padding-bottom: 1%;
 }
 
 .repeatStart {
@@ -173,7 +168,7 @@ li {
 }
 
 .input {
-    text-align: center; 
+    text-align: center;
 }
 
 .line {
@@ -182,6 +177,7 @@ li {
     color: black;
     padding-bottom: 2%;
 }
+
 .tipsHeader {
     text-align: center;
     font-size: 400%;
@@ -191,19 +187,19 @@ li {
 .tipsBody {
     padding-left: 2%;
     font-size: 120%;
-    background-image: url(freddie.jpg);
+    background-image: url(dots.jpg);
     background-color: black;
     background-position: center;
     background-attachment: fixed;
     min-height: 900px;
     max-width: 100%;
     background-repeat: no-repeat;
-    
 }
 
 .row1 {
     display: inline;
 }
+
 .row2 {
     display: inline;
 }
@@ -214,7 +210,6 @@ li {
 
 .picBtn {
     margin-top: 1.2%;
-    
 }
 
 .rulesList {
@@ -229,33 +224,38 @@ li {
 
 .findRepeatStart {
     color: white;
-   display: inline-block;
+    display: inline-block;
     float: left;
     margin-top: 4%;
 }
+
 .findheader {
     text-align: center;
     color: #053683;
 }
+
 .findRow1 {
     text-align: center;
     margin-top: 4%;
 }
+
 .line2 {
     float: left;
     display: inline-block;
     color: white;
 }
+
 .albCov {
     float: left;
     margin-top: 1%;
 }
 
 .artist1 {
-  text-align: center;
+    text-align: center;
     float: left;
     background-color: black;
 }
+
 .artistPic2 {
     margin-bottom: 7%;
 }
@@ -268,7 +268,6 @@ li {
 .listenLink {
     margin-top: 3%;
 }
-
 
 .rmvBtn {
     display: inline-block;

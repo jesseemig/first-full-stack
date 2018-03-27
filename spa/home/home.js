@@ -1,6 +1,6 @@
 var home = angular.module("routingApp")
 
-home.controller("HomeController", ["$scope", "$http",  function ($scope, $http) {
+home.controller("HomeController", ["$scope", "$http", function ($scope, $http) {
 
 
     var songs = [];
@@ -29,12 +29,12 @@ home.controller("HomeController", ["$scope", "$http",  function ($scope, $http) 
             console.log(response.data);
             $scope.newSongs = response.data;
             console.log($scope.newSongs, "old song")
-         $scope.playlist.push($scope.newSongs);
-               console.log($scope.playlist);
-            })
-            
+            $scope.playlist.push($scope.newSongs);
+            console.log($scope.playlist);
+        })
+
     };
-    
+
     $scope.newlyAdded = [];
 
     $scope.displayList = function (song, album, title, newList) {
@@ -42,15 +42,15 @@ home.controller("HomeController", ["$scope", "$http",  function ($scope, $http) 
             $scope.beingAdded = response.data;
             $scope.addingSong = response.data;
             console.log($scope.addingSong, "New song")
-         $scope.newlyAdded.push(response.data);
-                console.log(response.data)
+            $scope.newlyAdded.push(response.data);
+            console.log(response.data)
         })
     }
 
     $scope.remove = function (index, id) {
         return $http.delete("/playlist/" + id).then(function (response) {
             $scope.beingAdded.splice(index, 1);
-        console.log(response.data);
-    })
+            console.log(response.data);
+        })
     }
 }]);

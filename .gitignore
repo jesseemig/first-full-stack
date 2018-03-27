@@ -1,0 +1,4 @@
+_Store
+.idea
+*.orig
+node_modules
